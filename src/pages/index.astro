@@ -18,10 +18,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
@@ -32,14 +28,15 @@
         <nav class="py-4 px-4 max-w-screen-lg mx-auto">
           <div>
             <span
-              class="font-brand font-extrabold text-2xl rounded-xl pb-1 px-2 text-teal-600 bg-teal-100"
+              class="font-extrabold text-2xl rounded-xl pb-1 px-2 text-teal-600 bg-teal-100"
               >giija.</span
             >
           </div>
         </nav>
         <article class="max-w-screen-lg mx-auto my-40 px-4 text-center">
-          <h1 class="text-6xl font-brand font-bold mb-4">
-            Tingkatkan skill, temukan peluang.
+          <h1 class="text-6xl font-bold mb-6">
+            Tingkatkan <span class="underline-scribble">skill</span>, temukan
+            <span class="underline-twinkle">peluang</span>
           </h1>
           <p class="text-2xl mx-auto mb-10">
             Ikuti pelatihan berkualitas, dan dapatkan lowongan part-time yang
@@ -71,21 +68,26 @@
 
       <section>
         <article class="max-w-screen-lg mx-auto px-4 my-32">
-          <h2 class="text-4xl font-brand font-bold mb-4">
-            Mau kerja part-time <span class="text-teal-600">tapi bingung?</span>
-          </h2>
-          <p class="text-lg">
-            Lowongan kerja part-time itu sebenarnya banyak. Namun, informasinya
-            tidak terpusat, dan persyaratan kerjanya membutuhkan skill tertentu.
-            Dengan bergabung di Giija, kamu akan mendapatkan kesempatan untuk
-            mengikuti banyak pelatihan dan mendapatkan lowongan kerja part-time.
-          </p>
+          <div class="bg-gray-50 p-8 rounded-xl shadow">
+            <h2 class="text-4xl font-bold mb-4">
+              Mau kerja part-time <span class="text-teal-600"
+                >tapi bingung?</span
+              >
+            </h2>
+            <p class="text-lg">
+              Lowongan kerja part-time itu sebenarnya banyak. Namun,
+              informasinya tidak terpusat, dan persyaratan kerjanya membutuhkan
+              skill tertentu. Dengan bergabung di Giija, kamu akan mendapatkan
+              kesempatan untuk mengikuti banyak pelatihan dan mendapatkan
+              lowongan kerja part-time.
+            </p>
+          </div>
         </article>
       </section>
 
       <section>
         <article class="max-w-screen-lg mx-auto px-4 my-20 text-center">
-          <h2 class="text-4xl font-brand font-bold mb-4">
+          <h2 class="text-4xl font-bold mb-4">
             Akses pelatihan
             <span class="text-teal-600"> berkualitas & bersertifikat</span>
           </h2>
@@ -97,15 +99,29 @@
           </p>
           <ul class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <li>
-              <div class="w-full bg-gray-300 rounded h-40 mb-2"></div>
+              <div class="w-full h-64 mb-2 flex justify-center">
+                <img class="h-full" src="/web/images/pramusaji.png" alt="" />
+              </div>
               <p class="text-lg">Pramusaji</p>
             </li>
             <li>
-              <div class="w-full bg-gray-300 rounded h-40 mb-2"></div>
+              <div class="w-full h-64 mb-2 flex justify-center">
+                <img
+                  class="h-full"
+                  src="/web/images/customer-service.png"
+                  alt=""
+                />
+              </div>
               <p class="text-lg">Customer Service Admin</p>
             </li>
             <li>
-              <div class="w-full bg-gray-300 rounded h-40 mb-2"></div>
+              <div class="w-full h-64 mb-2 flex justify-center">
+                <img
+                  class="h-full"
+                  src="/web/images/cleaning-service.png"
+                  alt=""
+                />
+              </div>
               <p class="text-lg">Cleaning Service</p>
             </li>
             <li class="self-center">
@@ -119,7 +135,7 @@
 
       <section>
         <article class="max-w-screen-lg mx-auto px-4 my-20 text-center">
-          <h2 class="text-4xl font-brand font-bold mb-4">
+          <h2 class="text-4xl font-bold mb-4">
             Fokus terhadap
             <span class="text-teal-600">ekosistem UMKM lokal</span>
           </h2>
@@ -131,17 +147,28 @@
           </p>
           <ul class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <li>
-              <div class="w-full bg-gray-300 rounded h-40 mb-2"></div>
-              <p class="text-lg">Kota Bogor</p>
+              <div
+                class="w-full bg-gray-50 shadow rounded-xl h-40 mb-2 flex flex-col items-center justify-center"
+              >
+                <p class="text-lg font-semibold">Kota Bogor</p>
+              </div>
             </li>
             <li>
-              <div class="w-full bg-gray-300 rounded h-40 mb-2"></div>
-              <p class="text-lg">Kabupaten Bogor</p>
+              <div
+                class="w-full bg-gray-50 shadow rounded-xl h-40 mb-2 flex flex-col items-center justify-center"
+              >
+                <p class="text-lg font-semibold">Kabupaten Bogor</p>
+              </div>
             </li>
             <li>
-              <div class="w-full bg-gray-300 rounded h-40 mb-2"></div>
-              <p class="text-lg">Kota Bandung</p>
-              <p>(segera hadir)</p>
+              <div
+                class="w-full bg-gray-50 shadow rounded-xl h-40 mb-2 flex flex-col items-center justify-center"
+              >
+                <div>
+                  <p class="text-lg font-semibold">Kota Bandung</p>
+                  <p>(segera hadir)</p>
+                </div>
+              </div>
             </li>
             <li class="self-center">
               <p class="text-lg">
@@ -181,10 +208,46 @@
         </article>
       </section>
     </main>
-    <footer class="border-t border-gray-300">
-      <div class="max-w-screen-lg mx-auto px-4 py-8">
+    <footer>
+      <div class="max-w-screen-lg border-t border-gray-300 mx-auto px-4 py-8">
         <p class="text-center">© giija.com 2024. All rights reserved.</p>
       </div>
     </footer>
   </body>
 </html>
+
+<style>
+  .underline-scribble {
+    position: relative;
+    display: inline-block;
+  }
+
+  .underline-scribble::before {
+    content: "";
+    background-image: url("/web/images/line-scribble.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 125%;
+    height: 6rem;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+  }
+
+  .underline-twinkle {
+    position: relative;
+    display: inline-block;
+  }
+  .underline-twinkle::before {
+    content: "";
+    background-image: url("/web/images/line.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: rotate(-2.5deg);
+    width: 125%;
+    height: 6rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+  }
+</style>
