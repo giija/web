@@ -38,12 +38,12 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-          # Create a new orphan branch for the build
-          git checkout --orphan build
-
-          # Remove all files except the files on .gitignore
+          # Copy dist folders and checkout build branch
           mkdir -p ../dist
           cp -r dist/* ../dist
+          git checkout build
+
+          # Remove all files except the files on .gitignore
           git rm -rf .
           git clean -fdx
           mv ../dist/* .
@@ -51,4 +51,4 @@ jobs:
           # Commit and push the build files
           git add .
           git commit -m "Deploy to build branch"
-          git push --force origin build:build
+          git push origin build:build
