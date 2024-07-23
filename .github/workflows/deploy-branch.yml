@@ -18,6 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          token: ${{secrets.PAT}}
           fetch-depth: 0 # Ensure the full history is fetched so we can push to another branch
 
       - name: Set up Node.js
@@ -32,9 +33,6 @@ jobs:
         run: npm run build
 
       - name: Deploy to build branch
-        uses: actions/checkout@v4
-        with:
-          token: ${{secrets.PAT}}
         run: |
           # Create a new orphan branch for the build
           git checkout --orphan build
