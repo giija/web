@@ -34,8 +34,8 @@ jobs:
       - name: Deploy to build branch
         run: |
           # Configure git
-          git config --global user.name 'Github Actions'
-          git config --global user.email 'github-actions@users.noreply.github.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
           # Create a new orphan branch for the build
           git checkout --orphan build
