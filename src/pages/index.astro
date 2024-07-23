@@ -1,5 +1,5 @@
 ---
-
+import { linkTo } from "../utils/url";
 ---
 
 <html lang="en">
@@ -106,7 +106,7 @@
               <div
                 class="w-full bg-white rounded-xl shadow h-64 mb-2 flex justify-center"
               >
-                <img class="h-full" src="/web/images/pramusaji.png" alt="" />
+                <img class="h-full" src={linkTo("images/pramusaji.png")} alt="" />
               </div>
               <p class="text-lg">Pramusaji</p>
             </li>
@@ -116,7 +116,7 @@
               >
                 <img
                   class="h-full"
-                  src="/web/images/customer-service.png"
+                  src={linkTo("images/customer-service.png")}
                   alt=""
                 />
               </div>
@@ -128,7 +128,7 @@
               >
                 <img
                   class="h-full"
-                  src="/web/images/cleaning-service.png"
+                  src={linkTo("images/cleaning-service.png")}
                   alt=""
                 />
               </div>
