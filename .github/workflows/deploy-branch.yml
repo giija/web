@@ -32,11 +32,10 @@ jobs:
         run: npm run build
 
       - name: Deploy to build branch
+        uses: actions/checkout@v4
+        with:
+          token: ${{secrets.PAT}}
         run: |
-          # Configure git
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
           # Create a new orphan branch for the build
           git checkout --orphan build
 
@@ -46,5 +45,5 @@ jobs:
 
           # Commit and push the build files
           git add .
-          git commit -m "Deploy build to build branch"
+          git commit -m "Deploy to build branch"
           git push --force origin build:build
