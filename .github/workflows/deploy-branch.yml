@@ -1,0 +1,55 @@
+name: Deploy to Branch
+
+on:
+  push:
+    branches:
+      - master
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
+
+env:
+  BUILD_TARGET: branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensure the full history is fetched so we can push to another branch
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Deploy to build branch
+        run: |
+          # Configure git
+          git config --global user.name 'Github Actions'
+          git config --global user.email 'github-actions@users.noreply.github.com'
+
+          # Create a new orphan branch for the build
+          git checkout --orphan build
+
+          # Remove all files except the dist folder
+          git rm -rf .
+          git clean -fdx
+          mv dist/* .
+          rm -rf dist
+
+          # Commit and push the build files
+          git add .
+          git commit -m "Deploy build to build branch"
+          git push --force origin build:build
+
+      - name: Clean up repository
+        run: git checkout master && git branch -D build
