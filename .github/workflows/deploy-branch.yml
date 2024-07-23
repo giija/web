@@ -42,6 +42,7 @@ jobs:
           git checkout --orphan build
 
           # Remove all files except the files on .gitignore
+          git rm -rf .
           git clean -fd
           mv dist/* .
 
