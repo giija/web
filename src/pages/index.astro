@@ -1,5 +1,5 @@
 ---
-import { linkTo } from "../utils/url";
+
 ---
 
 <html lang="en">
@@ -22,246 +22,69 @@ import { linkTo } from "../utils/url";
       rel="stylesheet"
     />
   </head>
-  <body class="font-sans bg-gray-100 text-gray-900">
+  <body class="font-sans bg-zinc-900 text-zinc-200">
     <main class="max-w-screen-xl mx-auto">
-      <header>
-        <nav class="py-4 px-4 max-w-screen-lg mx-auto">
-          <div>
-            <span
-              class="font-extrabold text-2xl rounded-xl pb-1 px-2 text-teal-600 bg-teal-100"
-              >giija.</span
-            >
-          </div>
-        </nav>
-        <article class="max-w-screen-lg mx-auto my-4">
-          <div
-            class="bg-gradient-to-br from-gray-800 to-slate-700 text-white sm:rounded-xl py-32 px-8"
+      <header class="flex flex-col h-dvh">
+        <div class="py-4 px-4 text-center flex-none">
+          <span
+            class="font-extrabold text-2xl rounded-xl pb-1 px-2 text-teal-600"
+            >giija.</span
           >
+        </div>
+        <article class="max-w-screen-lg mx-auto my-4 flex-1">
+          <div class="px-8 h-full flex flex-col items-center justify-center">
             <h1 class="text-6xl font-bold mb-6">
               Tingkatkan <span class="underline-scribble">skill</span>, temukan
               <span class="underline-twinkle">peluang</span>
             </h1>
-            <p class="text-2xl text-gray-400 mx-auto mb-10">
+            <p class="text-2xl text-zinc-400 mx-auto mb-10">
               Ikuti pelatihan berkualitas, dan dapatkan lowongan part-time yang
               kamu inginkan.
             </p>
-            <button
-              class="inline-flex items-center text-2xl bg-teal-600 px-6 py-4 rounded-lg text-white border border-teal-600 font-semibold hover:bg-teal-700"
+            <p
+              class="text-2xl px-6 py-4 font-semibold text-teal-600 rounded-md border border-teal-600"
             >
-              Registrasi di sini
-              <svg
-                class="w-8 h-8 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 12H5m14 0-4 4m4-4-4-4"></path>
-              </svg>
-            </button>
-          </div>
-        </article>
-      </header>
-
-      <section>
-        <article class="max-w-screen-lg mx-auto px-4 my-32">
-          <div class="bg-gray-50 p-8 rounded-xl shadow">
-            <h2 class="text-4xl font-bold mb-4">
-              Mau kerja part-time <span class="text-teal-600"
-                >tapi bingung?</span
-              >
-            </h2>
-            <p class="text-lg">
-              Lowongan kerja part-time itu sebenarnya banyak. Namun,
-              informasinya tidak terpusat, dan persyaratan kerjanya membutuhkan
-              skill tertentu. Dengan bergabung di Giija, kamu akan mendapatkan
-              kesempatan untuk mengikuti banyak pelatihan dan mendapatkan
-              lowongan kerja part-time.
+              Coming soon!
             </p>
           </div>
         </article>
-      </section>
-
-      <section>
-        <article class="max-w-screen-lg mx-auto px-4 my-20 text-center">
-          <h2 class="text-4xl font-bold mb-4">
-            Akses pelatihan
-            <span class="text-teal-600"> berkualitas & bersertifikat</span>
-          </h2>
-          <p class="text-lg mb-8">
-            Registrasi ke Giija, dan dapatkan akses ke berbagai macam pelatihan
-            berkualitas dan bersertifikat dari
-            <b>Kementerian Ketenagakerjaan RI</b>
-            dan lembaga terpercaya lainnya.
-          </p>
-          <ul class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <li>
-              <div
-                class="w-full bg-white rounded-xl shadow h-64 mb-2 flex justify-center"
-              >
-                <img
-                  class="h-full"
-                  src={linkTo("images/pramusaji.png")}
-                  alt=""
-                />
-              </div>
-              <p class="text-lg">Pramusaji</p>
-            </li>
-            <li>
-              <div
-                class="w-full bg-white rounded-xl shadow h-64 mb-2 flex justify-center"
-              >
-                <img
-                  class="h-full"
-                  src={linkTo("images/customer-service.png")}
-                  alt=""
-                />
-              </div>
-              <p class="text-lg">Customer Service Admin</p>
-            </li>
-            <li>
-              <div
-                class="w-full bg-white rounded-xl shadow h-64 mb-2 flex justify-center"
-              >
-                <img
-                  class="h-full"
-                  src={linkTo("images/cleaning-service.png")}
-                  alt=""
-                />
-              </div>
-              <p class="text-lg">Cleaning Service</p>
-            </li>
-            <li class="self-center">
-              <p class="text-lg">
-                Dan masih banyak lagi pelatihan-pelatihan lainnya
-              </p>
-            </li>
-          </ul>
-        </article>
-      </section>
-
-      <section>
-        <article class="max-w-screen-lg mx-auto px-4 my-20 text-center">
-          <h2 class="text-4xl font-bold mb-4">
-            Fokus terhadap
-            <span class="text-teal-600">ekosistem UMKM lokal</span>
-          </h2>
-          <p class="text-lg mb-8">
-            Giija berusaha menyediakan pelatihan dan lowongan part-time yang
-            dapat mengakomodasi kebutuhan UMKM di daerah. Pengembangan layanan
-            pada platform ini akan dilakukan secara bertahap per kota dan
-            kabupaten.
-          </p>
-          <ul class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <li>
-              <div
-                class="w-full bg-gray-50 shadow rounded-xl h-40 mb-2 flex flex-col items-center justify-center"
-              >
-                <p class="text-lg font-semibold">Kota Bogor</p>
-              </div>
-            </li>
-            <li>
-              <div
-                class="w-full bg-gray-50 shadow rounded-xl h-40 mb-2 flex flex-col items-center justify-center"
-              >
-                <p class="text-lg font-semibold">Kabupaten Bogor</p>
-              </div>
-            </li>
-            <li>
-              <div
-                class="w-full bg-gray-50 shadow rounded-xl h-40 mb-2 flex flex-col items-center justify-center"
-              >
-                <div>
-                  <p class="text-lg font-semibold">Kota Bandung</p>
-                  <p>(segera hadir)</p>
-                </div>
-              </div>
-            </li>
-            <li class="self-center">
-              <p class="text-lg">
-                Kota dan kabupaten lainnya juga akan segera hadir
-              </p>
-            </li>
-          </ul>
-        </article>
-      </section>
-
-      <section>
-        <article class="max-w-screen-lg mx-auto px-4 my-20 text-center">
-          <p class="text-xl mb-4">
-            Tingkatkan skill dan peluang part-timemu dengan Giija!
-          </p>
-          <button
-            class="inline-flex items-center text-2xl bg-teal-600 px-6 py-4 rounded-lg text-white border border-teal-600 font-semibold hover:bg-teal-700"
-          >
-            Registrasi di sini
-            <svg
-              class="w-8 h-8 ml-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 12H5m14 0-4 4m4-4-4-4"></path>
-            </svg>
-          </button>
-        </article>
-      </section>
+      </header>
     </main>
-    <footer>
-      <div class="max-w-screen-lg border-t border-gray-300 mx-auto px-4 py-8">
-        <p class="text-center">© Giija.com 2024. All rights reserved.</p>
-      </div>
-    </footer>
   </body>
+
+  <style>
+    .underline-scribble {
+      position: relative;
+      display: inline-block;
+    }
+
+    .underline-scribble::before {
+      content: "";
+      background-image: url("/images/line-scribble.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 125%;
+      height: 6rem;
+      position: absolute;
+      top: 3rem;
+      left: 0;
+    }
+
+    .underline-twinkle {
+      position: relative;
+      display: inline-block;
+    }
+    .underline-twinkle::before {
+      content: "";
+      background-image: url("/images/line.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      transform: rotate(-2.5deg);
+      width: 125%;
+      height: 6rem;
+      position: absolute;
+      top: 0.5rem;
+      left: 0;
+    }
+  </style>
 </html>
-
-<style>
-  .underline-scribble {
-    position: relative;
-    display: inline-block;
-  }
-
-  .underline-scribble::before {
-    content: "";
-    background-image: url("/images/line-scribble.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 125%;
-    height: 6rem;
-    position: absolute;
-    top: 3rem;
-    left: 0;
-  }
-
-  .underline-twinkle {
-    position: relative;
-    display: inline-block;
-  }
-  .underline-twinkle::before {
-    content: "";
-    background-image: url("/images/line.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transform: rotate(-2.5deg);
-    width: 125%;
-    height: 6rem;
-    position: absolute;
-    top: 0.5rem;
-    left: 0;
-  }
-</style>
