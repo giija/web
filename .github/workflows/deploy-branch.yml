@@ -40,16 +40,11 @@ jobs:
           # Create a new orphan branch for the build
           git checkout --orphan build
 
-          # Remove all files except the dist folder
-          git rm -rf .
-          git clean -fdx
+          # Remove all files except the files on .gitignore
+          git clean -fd
           mv dist/* .
-          rm -rf dist
 
           # Commit and push the build files
           git add .
           git commit -m "Deploy build to build branch"
           git push --force origin build:build
-
-      - name: Clean up repository
-        run: git checkout master && git branch -D build
